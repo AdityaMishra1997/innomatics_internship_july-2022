@@ -1,0 +1,5 @@
+import math
+s1 = int(input())
+s2 = int(input())
+H = math.hypot(s1, s2)
+print(f"{round(math.degrees(math.asin(s1/H)))}\u00B0")

@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    N = int(input())
+    arr = []
+    for i in range(N):
+        line = input()
+        cmd, args = line.split(' ')[0], line.split(' ')[1:]
+        if cmd != "print":
+            eval("arr.{0}({1})".format(cmd,','.join(args)))
+        else:
+            print(arr)

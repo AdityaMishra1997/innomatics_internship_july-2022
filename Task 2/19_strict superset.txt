@@ -1,0 +1,6 @@
+A,n = set(input().split()),int(input())
+boolList = []
+for _ in range(n):
+    B = set(input().split())
+    boolList.append(True) if A.issubset(B) and A!=B else boolList.append(False)
+print(all(boolList))
